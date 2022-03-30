@@ -93,6 +93,22 @@ const headerMain = () => {
                                 </li>
                                 <li>
                                     <a href="#none">Learn</a>
+                                    <nav className="secondaryNavSimple">
+                                        <div className="secondaryNav_inner">
+                                            <div className="secondaryNavSimpleList">
+                                                <div className="secondaryNavSimpleItem">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#none">Radar education</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#none">Safety standards</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </nav>
                                 </li>
                                 <li>
                                     <a href="#none">Support</a>
