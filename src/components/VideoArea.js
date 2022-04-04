@@ -5,7 +5,7 @@ const VideoArea = () => {
     return (
         <div className="VideoArea">
             <div className="videoPlayer">
-                <video autoplay="autoplay" muted="muted" loop="loop">
+                <video autoPlay="autoplay" muted="muted" loop="loop">
                     <source src={RadarVideo} type="video/mp4" />
                     Sorry, your browser doesn't support embedded videos.
                 </video>

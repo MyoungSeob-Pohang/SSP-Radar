@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+.IndustrialSafety {
+    background-color: #f2f2f2;
+    width: 100%;
+
+    .IndustrialSafety_inner {
+        width: 60%;
+        margin: 0 auto;
+        padding: 90px 0 0;
+
+    }
+
+    .IndustrialSafetyHeader {
+        text-align: center;
+
+        .IndustrialSafetyHeader_Title {
+            font-size: 50px;
+            text-align: center;
+            line-height: 1.2;
+
+            &>div:not(:first-child) {
+                font-family: 'RobotoL';
+            }
+        }
+
+
+        .IndustrialSafetyHeader_SubTitle {
+            font-size: 20px;
+            text-align: center;
+            margin-top: 45px;
+
+            &>div {
+                font-family: 'RobotoL';
+            }
+        }
+
+        &>a {
+            font-family: 'RobotoL';
+            color: #127eb5;
+            text-decoration: underline;
+            font-size: 22px;
+            margin-top: 30px;
+            display: inline-block;
+        }
+    }
+
+    .IndustrialSafetyContent {
+        position: relative;
+        width: 100%;
+        padding: 90px 0 0;
+
+        .IndustrialSafety_Img {
+            display: flex;
+            align-items: center;
+            flex-flow: row wrap;
+
+            .IndustrialSafety_Img_item {
+                flex: 0 0 33.33333%;
+                max-width: 33.33333%;
+            }
+
+            &>.IndustrialSafety_Img_item:nth-child(2) {
+                align-self: flex-end;
+            }
+
+            &>.IndustrialSafety_Img_item:nth-child(2)>img:first-child {
+                margin: 0 auto;
+                margin-bottom: 90px;
+                align-self: flex-end;
+            }
+
+            &>.IndustrialSafety_Img_item:nth-child(3)>img {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+.ripples {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    z-index: 10;
+
+    .ripple {
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        top: 50%;
+        width: 25%;
+        z-index: 5;
+
+        &>img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            -webkit-animation: rippleLittle 3s infinite;
+            animation: rippleLittle 3s infinite;
+            -webkit-animation-timing-function: cubic-bezier(.25, .46, .45, .94);
+            animation-timing-function: cubic-bezier(.25, .46, .45, .94);
+            transform-origin: center;
+        }
+
+        &:nth-child(2)>img {
+            animation-delay: .45s;
+        }
+
+        &:nth-child(3)>img {
+            animation-delay: 1s;
+        }
+
+        @keyframes rippleLittle {
+            0% {
+                transform: scale(1);
+                -webkit-transform: scale(1);
+                opacity: 0
+            }
+
+            10% {
+                opacity: 1
+            }
+
+            40% {
+                transform: scale(1.8);
+                -webkit-transform: scale(1.8);
+                opacity: .5
+            }
+
+            50% {
+                opacity: 0
+            }
+
+            to {
+                transform: scale(1.8);
+                -webkit-transform: scale(1.8);
+                opacity: 0
+            }
+        }
+    }
+}
