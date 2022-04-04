@@ -130,8 +130,8 @@
             }
 
             40% {
-                transform: scale(1.8);
-                -webkit-transform: scale(1.8);
+                transform: scale(6);
+                -webkit-transform: scale(6);
                 opacity: .5
             }
 
@@ -140,8 +140,8 @@
             }
 
             to {
-                transform: scale(1.8);
-                -webkit-transform: scale(1.8);
+                transform: scale(6);
+                -webkit-transform: scale(6);
                 opacity: 0
             }
         }

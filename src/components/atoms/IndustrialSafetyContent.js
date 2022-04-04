@@ -14,8 +14,12 @@ const IndustrialSafetyContent = () => {
                 </div>
                 <div className="IndustrialSafety_Img_item">
                     <img src={signature} alt="" />
-                    <img src={radar} alt="" />
-                    <Ripples />
+                    <div className="scrollImg">
+                        <div className="scrollImg_Item">
+                            <img src={radar} alt="" />
+                            <Ripples />
+                        </div>
+                    </div>
                 </div>
                 <div className="IndustrialSafety_Img_item">
                     <img src={headphones} alt="" />
