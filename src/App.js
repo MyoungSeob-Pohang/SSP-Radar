@@ -2,6 +2,7 @@ import Header from './components/Header';
 import VideoArea from './components/VideoArea';
 import Subtitle from './components/SubTitle';
 import IndustrialSafety from './components/IndustrialSafety';
+import Jumbotron from './components/Jumbotron';
 import './static/css/App.scss';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
             <VideoArea />
             <Subtitle />
             <IndustrialSafety />
+            <Jumbotron />
         </div>
     );
 }

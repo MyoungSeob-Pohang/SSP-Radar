@@ -4,6 +4,7 @@ import helmet from '../../static/image/helmet.jpg';
 import radar from '../../static/image/radar.png';
 import signature from '../../static/image/signature.svg';
 import Ripples from './Ripples';
+import { Controller, Scene } from 'react-scrollmagic';
 
 const IndustrialSafetyContent = () => {
     return (
@@ -14,12 +15,23 @@ const IndustrialSafetyContent = () => {
                 </div>
                 <div className="IndustrialSafety_Img_item">
                     <img src={signature} alt="" />
-                    <div className="scrollImg">
-                        <div className="scrollImg_Item">
-                            <img src={radar} alt="" />
-                            <Ripples />
-                        </div>
-                    </div>
+                    <Controller>
+                        <Scene
+                            duration={900}
+                            pin=".scrollImg"
+                            enabled={true}
+                            offset={-210}
+                            triggerElement=".scrollImg"
+                            pinSettings={{ pushFollowers: false }}
+                        >
+                            <div className="scrollImg">
+                                <div className="scrollImg_Item">
+                                    <img src={radar} alt="" />
+                                    <Ripples />
+                                </div>
+                            </div>
+                        </Scene>
+                    </Controller>
                 </div>
                 <div className="IndustrialSafety_Img_item">
                     <img src={headphones} alt="" />
