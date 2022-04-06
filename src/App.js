@@ -5,6 +5,7 @@ import IndustrialSafety from './components/IndustrialSafety';
 import Jumbotron from './components/Jumbotron';
 import AnimationList from './components/AnimationList';
 import RadarInfo from './components/RadarInfo';
+import Immune from './components/Immune';
 import './static/css/App.scss';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <Jumbotron />
             <AnimationList />
             <RadarInfo />
+            <Immune />
         </div>
     );
 }
