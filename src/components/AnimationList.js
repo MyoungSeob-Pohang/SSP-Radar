@@ -3,7 +3,6 @@ import AnimationData from './atoms/AnimationItemData';
 import AnimationItems from './atoms/AnimationItems';
 
 const AnimationList = () => {
-    console.log(AnimationData);
     return (
         <div className="AnimationList">
             <div className="AnimationList_inner">
