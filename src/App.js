@@ -4,6 +4,7 @@ import Subtitle from './components/SubTitle';
 import IndustrialSafety from './components/IndustrialSafety';
 import Jumbotron from './components/Jumbotron';
 import AnimationList from './components/AnimationList';
+import RadarInfo from './components/RadarInfo';
 import './static/css/App.scss';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
             <IndustrialSafety />
             <Jumbotron />
             <AnimationList />
+            <RadarInfo />
         </div>
     );
 }

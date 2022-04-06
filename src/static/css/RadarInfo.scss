@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+.RadarInfo {
+    background: #f2f2f2;
+    overflow-x: hidden;
+    padding: 90px 0;
+
+    .RadarInfoText {
+        width: 50%;
+        margin: 0 auto;
+
+        &>h3 {
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .RadarInfoSubText {
+            text-align: center;
+
+            &>p {
+                font-size: 22px;
+                margin-top: 45px;
+            }
+
+            &>a {
+                color: #127eb5;
+                text-decoration: underline;
+                font-size: 22px;
+                margin-top: 45px;
+                display: inline-block;
+            }
+        }
+    }
+
+    .RadarInfoEffect {
+        width: 63%;
+        margin: 90px auto 0;
+
+        .RadarInfoEffect_inner {
+            padding: 300px 0;
+
+            .RadarInfoEffectItems {
+                display: flex;
+                flex-flow: row wrap;
+
+                .RadarInfoEffectItem:nth-child(odd) {
+                    flex: 0 0 20%;
+                    max-width: 20%;
+                    padding-right: 0;
+                    padding-left: 0;
+
+                    .RadarInfoEffectItem_inner {
+                        position: relative;
+
+                        &>img {
+                            width: 90%;
+                            margin: 0 auto
+                        }
+
+                        .RadarInfoEffectItemReveal {
+                            position: absolute;
+                            width: 100%;
+                            left: 0;
+                            bottom: 0;
+                            height: 200%;
+
+                            .RadarInfoEffectItemIcon {
+                                align-items: flex-end;
+                                top: 0;
+                                transform: translateX(-100%);
+                                position: absolute;
+                                display: flex;
+                                flex-direction: column;
+
+                                &>img {
+                                    width: 80px;
+                                    visibility: inherit;
+                                    opacity: 1;
+                                    transform: translate(110%, 0%) matrix(1, 0, 0, 1, 0, 0)
+                                }
+
+                                &>div {
+                                    margin-top: 10px;
+                                    font-weight: 600;
+                                    line-height: 1;
+                                    font-size: 22px;
+                                    text-align: left;
+                                    transform: translate(110%, 0%) matrix(1, 0, 0, 1, 0, 0);
+                                }
+                            }
+
+                            .RadarInfoEffectItem_line {
+                                visibility: inherit;
+                                opacity: 1;
+                                bottom: 0;
+                                top: auto;
+                                width: 1px;
+                                height: 100%;
+                                background: #000;
+                                position: absolute;
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+
+                .RadarInfoEffectItem:nth-child(2n) {
+                    flex: 0 0 20%;
+                    max-width: 20%;
+                    padding-right: 0;
+                    padding-left: 0;
+
+                    .RadarInfoEffectItem_inner {
+                        position: relative;
+
+                        &>img {
+                            width: 90%;
+                            margin: 0 auto;
+                        }
+
+                        .RadarInfoEffectItemReveal {
+                            position: absolute;
+                            width: 100%;
+                            left: 0;
+                            top: 0;
+                            height: 200%;
+
+                            .RadarInfoEffectItemIcon {
+                                align-items: flex-start;
+                                bottom: 0;
+                                position: absolute;
+                                display: flex;
+                                flex-direction: column;
+
+                                &>img {
+                                    width: 80px;
+                                    visibility: inherit;
+                                    opacity: 1;
+                                    transform: translate(-110%, 0%) matrix(1, 0, 0, 1, 0, 0)
+                                }
+
+                                &>div {
+                                    margin-top: 10px;
+                                    font-weight: 600;
+                                    line-height: 1;
+                                    font-size: 22px;
+                                    text-align: right;
+                                    transform: translate(-110%, 0%) matrix(1, 0, 0, 1, 0, 0);
+                                }
+                            }
+
+                            .RadarInfoEffectItem_line {
+                                visibility: inherit;
+                                opacity: 1;
+                                bottom: 0;
+                                top: auto;
+                                width: 1px;
+                                height: 100%;
+                                background: #000;
+                                position: absolute;
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+
+                .RadarInfoEffectItemReveal__2 {
+                    position: absolute;
+                    width: 100%;
+                    left: 0;
+                    top: 0;
+                    height: 200%;
+
+                    .RadarInfoEffectItemIcon {
+                        bottom: 0;
+                        top: auto;
+                        right: 0;
+                        transform: translateX(100%);
+                        align-items: flex-start;
+                        position: absolute;
+                        display: flex;
+                        flex-direction: column;
+
+                        &>img {
+                            transform: translate(-110%, 0%) matrix(1, 0, 0, 1, 0, 0);
+                            width: 80px;
+                        }
+
+                        &>div {
+                            transform: translate(-110%, 0%) matrix(1, 0, 0, 1, 0, 0);
+                            text-align: right;
+                        }
+                    }
+
+                    .RadarInfoEffectItem_line {
+                        height: 100%;
+                        visibility: inherit;
+                        opacity: 1;
+                        width: 1px;
+                        background: #000;
+                        position: absolute;
+                        left: auto;
+                        right: 0;
+                        top: 0;
+                    }
+                }
+            }
+        }
+    }
+}
