@@ -1,1 +1,412 @@
 @charset "utf-8";
+
+.Contacts {
+    padding: 90px 0;
+    text-align: center;
+
+    .Contacts_inner {
+        width: 100%;
+        height: 100%;
+
+        .ContactsTitle {
+            margin-bottom: 20px;
+
+            &>h3 {
+                font-size: 22px;
+                letter-spacing: 1px;
+            }
+        }
+
+        .ContactsForm {
+            .ContactsForm_inner {
+                &>form {
+                    text-align: left;
+
+                    .ErrorForm {
+                        max-width: 50%;
+                        margin: 0 auto;
+
+                        .ValidationError {
+                            background: #e00000;
+                            border: thin solid #e00000;
+                            text-align: center;
+                            font-size: 16px;
+                            color: #fff;
+                            margin: 50px 0 30px;
+
+                            &>p {
+                                padding: 20px;
+                            }
+                        }
+                    }
+
+                    .FormWrap {
+                        max-width: 50%;
+                        display: flex;
+                        align-items: flex-end;
+                        flex-flow: row wrap;
+                        margin: 0 auto;
+
+                        &>div {
+                            position: relative;
+                            flex: 0 0 50%;
+                            max-width: 50%;
+                            margin-bottom: 30px;
+                            padding: 5px 0;
+
+                            &>label {
+                                color: #707070;
+                                position: relative;
+                                padding-bottom: 20px;
+                                line-height: 1;
+                                display: block;
+                                font-size: 15px;
+                                padding: 0 20px;
+
+                                &>input {
+                                    display: block;
+                                    width: 100%;
+                                    border-radius: 8px;
+                                    background-color: #f2f2f2;
+                                    margin-top: 5px;
+                                    height: 50px;
+                                    border: 1px solid transparent;
+                                    line-height: 1.2;
+                                    padding: 15px;
+                                }
+
+                                &>span {
+                                    position: absolute;
+                                    bottom: -28px;
+                                    left: 25px;
+                                    width: auto;
+                                    margin: 0;
+                                    background: #e74c3c;
+                                    color: #fff;
+                                    padding: 4px 12px;
+                                    line-height: 1;
+                                    border-radius: 3px;
+                                    font-weight: 400;
+                                    font-size: 12px;
+
+                                    &::after {
+                                        content: "";
+                                        position: absolute;
+                                        top: -5px;
+                                        left: 5px;
+                                        width: 0;
+                                        height: 0;
+                                        border-left: 5px solid transparent;
+                                        border-right: 5px solid transparent;
+                                        border-bottom: 5px solid #e74c3c;
+                                    }
+                                }
+                            }
+                        }
+
+                        .countryAndPhone {
+                            display: flex;
+                            flex-flow: row wrap;
+                            margin-bottom: 20px;
+
+                            .countryArea {
+                                margin-bottom: 10px;
+                                position: relative;
+                                flex: 0 0 50%;
+                                max-width: 50%;
+
+                                &>label {
+                                    position: relative;
+                                    color: #707070;
+                                    line-height: 1;
+                                    display: block;
+                                    font-size: 15px;
+                                    padding: 0 20px;
+                                    width: 100%;
+
+                                    .form-control {
+                                        height: 50px;
+                                        background: #f2f2f2;
+                                        width: 100%;
+                                        border: none;
+                                        margin-top: 5px !important;
+                                        border-radius: 8px;
+                                    }
+
+                                    .flag-dropdown {
+                                        height: 50px;
+                                        top: 5px;
+                                    }
+
+                                    &>span {
+                                        position: absolute;
+                                        bottom: -28px;
+                                        left: 25px;
+                                        width: auto;
+                                        margin: 0;
+                                        background: #e74c3c;
+                                        color: #fff;
+                                        padding: 4px 12px;
+                                        line-height: 1;
+                                        border-radius: 3px;
+                                        font-weight: 400;
+                                        font-size: 12px;
+
+                                        &::after {
+                                            content: "";
+                                            position: absolute;
+                                            top: -5px;
+                                            left: 5px;
+                                            width: 0;
+                                            height: 0;
+                                            border-left: 5px solid transparent;
+                                            border-right: 5px solid transparent;
+                                            border-bottom: 5px solid #e74c3c;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .phoneArea {
+                                margin-bottom: 10px;
+                                position: relative;
+                                flex: 0 0 50%;
+                                max-width: 50%;
+
+                                &>label {
+                                    position: relative;
+                                    color: #707070;
+                                    line-height: 1;
+                                    display: block;
+                                    font-size: 15px;
+                                    padding: 0 20px;
+                                    width: 100%;
+
+                                    &>#phoneNumber {
+                                        display: block;
+                                        width: 100%;
+                                        border-radius: 8px;
+                                        background-color: #f2f2f2;
+                                        margin-top: 5px;
+                                        height: 50px;
+                                        border: 1px solid transparent;
+                                        line-height: 1.2;
+                                        padding: 10px;
+                                    }
+
+                                    &>span {
+                                        position: absolute;
+                                        bottom: -28px;
+                                        left: 25px;
+                                        width: auto;
+                                        margin: 0;
+                                        background: #e74c3c;
+                                        color: #fff;
+                                        padding: 4px 12px;
+                                        line-height: 1;
+                                        border-radius: 3px;
+                                        font-weight: 400;
+                                        font-size: 12px;
+
+                                        &::after {
+                                            content: "";
+                                            position: absolute;
+                                            top: -5px;
+                                            left: 5px;
+                                            width: 0;
+                                            height: 0;
+                                            border-left: 5px solid transparent;
+                                            border-right: 5px solid transparent;
+                                            border-bottom: 5px solid #e74c3c;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .zipCodeAndCity {
+                            display: flex;
+                            flex-flow: row wrap;
+                            margin-bottom: 20px;
+
+                            .zipCodeArea {
+                                margin-bottom: 10px;
+                                position: relative;
+                                flex: 0 0 33.3%;
+                                max-width: 33.3%;
+
+                                &>label {
+                                    position: relative;
+                                    color: #707070;
+                                    line-height: 1;
+                                    display: block;
+                                    font-size: 15px;
+                                    padding: 0 20px;
+                                    width: 100%;
+
+                                    &>input {
+                                        display: block;
+                                        width: 100%;
+                                        border-radius: 8px;
+                                        background-color: #f2f2f2;
+                                        margin-top: 5px;
+                                        height: 50px;
+                                        border: 1px solid transparent;
+                                        line-height: 1.2;
+                                        padding: 10px;
+                                    }
+
+                                    &>span {
+                                        position: absolute;
+                                        bottom: -28px;
+                                        left: 25px;
+                                        width: auto;
+                                        margin: 0;
+                                        background: #e74c3c;
+                                        color: #fff;
+                                        padding: 4px 12px;
+                                        line-height: 1;
+                                        border-radius: 3px;
+                                        font-weight: 400;
+                                        font-size: 12px;
+
+                                        &::after {
+                                            content: "";
+                                            position: absolute;
+                                            top: -5px;
+                                            left: 5px;
+                                            width: 0;
+                                            height: 0;
+                                            border-left: 5px solid transparent;
+                                            border-right: 5px solid transparent;
+                                            border-bottom: 5px solid #e74c3c;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .cityArea {
+                                margin-bottom: 10px;
+                                position: relative;
+                                flex: 0 0 66.6%;
+                                max-width: 66.6%;
+
+                                &>label {
+                                    position: relative;
+                                    color: #707070;
+                                    line-height: 1;
+                                    display: block;
+                                    font-size: 15px;
+                                    padding: 0 20px;
+                                    width: 100%;
+
+                                    &>input {
+                                        display: block;
+                                        width: 100%;
+                                        border-radius: 8px;
+                                        background-color: #f2f2f2;
+                                        margin-top: 5px;
+                                        height: 50px;
+                                        border: 1px solid transparent;
+                                        line-height: 1.2;
+                                        padding: 10px;
+                                    }
+
+                                    &>span {
+                                        position: absolute;
+                                        bottom: -28px;
+                                        left: 25px;
+                                        width: auto;
+                                        margin: 0;
+                                        background: #e74c3c;
+                                        color: #fff;
+                                        padding: 4px 12px;
+                                        line-height: 1;
+                                        border-radius: 3px;
+                                        font-weight: 400;
+                                        font-size: 12px;
+
+                                        &::after {
+                                            content: "";
+                                            position: absolute;
+                                            top: -5px;
+                                            left: 5px;
+                                            width: 0;
+                                            height: 0;
+                                            border-left: 5px solid transparent;
+                                            border-right: 5px solid transparent;
+                                            border-bottom: 5px solid #e74c3c;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .Request {
+                            position: relative;
+                            flex: 0 0 100%;
+                            max-width: 100%;
+                            margin-bottom: 30px;
+
+                            &>label {
+                                position: relative;
+                                color: #707070;
+                                line-height: 1;
+                                display: block;
+                                font-size: 15px;
+                                padding: 0 20px;
+                                width: 100%;
+
+                                &>textarea {
+                                    width: 100%;
+                                    height: 120px;
+                                    resize: none;
+                                    border-radius: 8px;
+                                    background-color: #f2f2f2;
+                                    margin-top: 5px;
+                                    border: none;
+                                }
+
+                                &>span {
+                                    position: absolute;
+                                    bottom: -28px;
+                                    left: 25px;
+                                    width: auto;
+                                    margin: 0;
+                                    background: #e74c3c;
+                                    color: #fff;
+                                    padding: 4px 12px;
+                                    line-height: 1;
+                                    border-radius: 3px;
+                                    font-weight: 400;
+                                    font-size: 12px;
+
+                                    &::after {
+                                        content: "";
+                                        position: absolute;
+                                        top: -5px;
+                                        left: 5px;
+                                        width: 0;
+                                        height: 0;
+                                        border-left: 5px solid transparent;
+                                        border-right: 5px solid transparent;
+                                        border-bottom: 5px solid #e74c3c;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.MuiOutlinedInput-root {
+    background: #f2f2f2 !important;
+    border-radius: 8px !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+    border: none !important;
+}
