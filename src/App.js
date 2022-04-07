@@ -6,6 +6,7 @@ import Jumbotron from './components/Jumbotron';
 import AnimationList from './components/AnimationList';
 import RadarInfo from './components/RadarInfo';
 import Immune from './components/Immune';
+import Contacts from './components/Contacts';
 import './static/css/App.scss';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <AnimationList />
             <RadarInfo />
             <Immune />
+            <Contacts />
         </div>
     );
 }
