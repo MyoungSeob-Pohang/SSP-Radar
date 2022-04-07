@@ -46,5 +46,73 @@
                 }
             }
         }
+
+        .ImmuneBlock {
+            position: relative;
+            margin-top: -160px;
+            z-index: 1;
+            color: #fff;
+
+            .ImmuneBlock_inner {
+                width: 75%;
+                margin: 0 auto;
+
+                .ImmuneBlockItems {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .ImmuneBlockItem {
+                        flex: 25% 0 0;
+                        position: relative;
+
+                        .ImmuneBlockItem_inner {
+                            position: relative;
+                            height: 0;
+                            padding-bottom: 140%;
+
+                            &>h3 {
+                                position: absolute;
+                                top: 45px;
+                                left: 0;
+                                width: 100%;
+                                text-shadow: 0 0 5px #000;
+                                z-index: 10;
+                                text-align: center;
+                                font-size: 22px;
+                            }
+
+                            &>div {
+                                height: 100%;
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    &>.ImmuneBlockItem:first-child>.ImmuneBlockItem_inner>.ImmuneBlockItemBg {
+                        background: url('../image/immune_light.jpg') no-repeat center center;
+                        background-size: cover;
+                    }
+
+                    &>.ImmuneBlockItem:nth-child(2)>.ImmuneBlockItem_inner>.ImmuneBlockItemBg {
+                        background: url('../image/immune_debris.jpg') no-repeat center center;
+                        background-size: cover;
+                    }
+
+                    &>.ImmuneBlockItem:nth-child(3)>.ImmuneBlockItem_inner>.ImmuneBlockItemBg {
+                        background: url('../image/immune_smoke.jpg') no-repeat center center;
+                        background-size: cover;
+                    }
+
+                    &>.ImmuneBlockItem:last-child>.ImmuneBlockItem_inner>.ImmuneBlockItemBg {
+                        background: url('../image/immune_water.jpg') no-repeat center center;
+                        background-size: cover;
+                    }
+                }
+            }
+        }
     }
 }
