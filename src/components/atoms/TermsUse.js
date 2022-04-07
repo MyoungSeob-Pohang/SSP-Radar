@@ -2,7 +2,7 @@ const TermsUse = () => {
     return (
         <div className="requiredTerms">
             <div className="requiredTermsArea">
-                <div className="requiredTerms_inner">
+                <div className="requiredTermsList">
                     {/* personal Information */}
                     <div className="requiredTerms">
                         <label>
@@ -40,6 +40,9 @@ const TermsUse = () => {
                             <input id="profilingActivity" type="checkbox" name="profilingActivity" value="1" />
                         </label>
                     </div>
+                </div>
+                <div className="formSubmitBtn">
+                    <button type="submit">Contact Us</button>
                 </div>
             </div>
         </div>
