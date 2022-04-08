@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 .Contacts {
-    padding: 90px 0;
+    padding: 90px 0 0;
     text-align: center;
 
     .Contacts_inner {
@@ -463,6 +463,28 @@
                                         }
                                     }
                                 }
+
+                                .formSubmitBtn {
+                                    margin-top: 10px;
+                                    text-align: right;
+                                    flex: 0 0 41%;
+                                    max-width: 41%;
+                                    padding: 0 10px;
+
+                                    &>button {
+                                        background-color: #1592d2;
+                                        color: #fff;
+                                        padding: 18px 30px;
+                                        border: 1px solid transparent;
+                                        border-radius: 8px;
+                                        line-height: 1;
+                                        text-align: center;
+                                        cursor: pointer;
+                                        padding-left: 60px;
+                                        padding-right: 60px;
+                                        font-size: 20px;
+                                    }
+                                }
                             }
                         }
                     }
@@ -479,4 +501,9 @@
 
 .MuiOutlinedInput-notchedOutline {
     border: none !important;
+}
+
+.individualError,
+.ValidationError {
+    display: none;
 }

@@ -4,12 +4,12 @@ import '../static/css/IndustrialSafety.scss';
 
 const IndustrialSafety = () => {
     return (
-        <div className="IndustrialSafety">
+        <section className="IndustrialSafety">
             <div className="IndustrialSafety_inner">
                 <IndustrialSafetyHeader />
                 <IndustrialSafetyContent />
             </div>
-        </div>
+        </section>
     );
 };
 export default IndustrialSafety;

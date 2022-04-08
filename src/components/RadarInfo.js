@@ -4,10 +4,10 @@ import '../static/css/RadarInfo.scss';
 
 const RadarInfo = () => {
     return (
-        <div className="RadarInfo">
+        <section className="RadarInfo">
             <RadarInfoText />
             <RadarInfoEffect />
-        </div>
+        </section>
     );
 };
 export default RadarInfo;

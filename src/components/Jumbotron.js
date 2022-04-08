@@ -2,7 +2,7 @@ import '../static/css/Jumbotron.scss';
 
 const Jumbotron = () => {
     return (
-        <div className="Jumbotron">
+        <section className="Jumbotron">
             <div className="Jumbotron_inner">
                 <div className="JumbotronInfo">
                     <div className="Jumbotron_Title">
@@ -18,7 +18,7 @@ const Jumbotron = () => {
                     <a href="#none">Find out more about our products</a>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 export default Jumbotron;

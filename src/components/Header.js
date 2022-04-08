@@ -4,10 +4,10 @@ import '../static/css/Header.scss';
 
 const Header = () => {
     return (
-        <div className="Header">
+        <header className="Header">
             <HeaderTop />
             <HeaderMain />
-        </div>
+        </header>
     );
 };
 export default Header;

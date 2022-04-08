@@ -4,7 +4,7 @@ import AnimationItems from './atoms/AnimationItems';
 
 const AnimationList = () => {
     return (
-        <div className="AnimationList">
+        <section className="AnimationList">
             <div className="AnimationList_inner">
                 <h2>Watch animations on typical use cases</h2>
                 <div className="AnimationItems">
@@ -13,7 +13,7 @@ const AnimationList = () => {
                     })}
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 export default AnimationList;

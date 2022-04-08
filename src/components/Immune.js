@@ -3,7 +3,7 @@ import '../static/css/Immune.scss';
 
 const Immune = () => {
     return (
-        <div className="Immune">
+        <section className="Immune">
             <div className="Immune_inner">
                 <div className="Immune_bg">
                     <div className="Immune_Info">
@@ -17,7 +17,7 @@ const Immune = () => {
                 </div>
                 <ImmuneBlock />
             </div>
-        </div>
+        </section>
     );
 };
 

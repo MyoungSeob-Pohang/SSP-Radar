@@ -7,6 +7,7 @@ import AnimationList from './components/AnimationList';
 import RadarInfo from './components/RadarInfo';
 import Immune from './components/Immune';
 import Contacts from './components/Contacts';
+import Footer from './components/Footer';
 import './static/css/App.scss';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <RadarInfo />
             <Immune />
             <Contacts />
+            <Footer />
         </div>
     );
 }
