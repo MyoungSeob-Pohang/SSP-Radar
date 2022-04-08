@@ -6,7 +6,7 @@ const FooterSub = () => {
             <div className="footerSub_inner">
                 <div className="footerSubHeader">
                     <div className="copyright">
-                        <p>Copyright © 2016-2022 Inxpect S.p.A. - All rights reserved.</p>
+                        <p>Copyright © 2020-2022 SENSING PLUS. - All rights reserved.</p>
                     </div>
                     <div className="footerQuickNav">
                         <ul>
@@ -35,8 +35,8 @@ const FooterSub = () => {
                         </div>
                         <div className="footerSubContentInfo">
                             <p>
-                                Inxpect S.p.A. Via Serpente, 91 - 25131 Brescia - Italy - <a href="#none">hello@inxpect.com</a> - T +39 030
-                                5785105 <br />
+                                SENSINGPLUS. Via Serpente, 91 - 25131 Brescia - Italy - <a href="#none">ssplus@sensingplus.co.kr</a> - T +39
+                                030 5785105 <br />
                                 VAT ID IT03771080987 - Cap. Soc. € 427.510,16 I.V. - R.E.A. BS 561724 - PEC:{' '}
                                 <a href="#none">amministrazione@pec.inxpect.it</a> <br />
                                 ISO 9001:2015 Quality Management System
